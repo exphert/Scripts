@@ -1,4 +1,4 @@
-## Open devtools in you discord app, with CTRL + SHIFT + i (if not work, follow this step below)
+# Open devtools in you discord app, with CTRL + SHIFT + i (if not work, follow this step below)
 ```
 1. Navigate to the Discord settings folder:
   - Windows: Open the Run dialog (Win+R), type %APPDATA%\Discord\, and press Enter.
@@ -10,31 +10,4 @@
 4. Save the file and restart Discord. The DevTools shortcut (Ctrl+Shift+I or Cmd+Option+I) should now work.
 ```
 
-## Then copy this code and paste in discord app console (if cannot paste, type `allow pasting`, then paste again)
-```js
-const url = 'https://raw.githubusercontent.com/exphert/Scripts/refs/heads/main/discord-quest-completer.js';
-
-fetch(url)
-    .then(response => {
-        // Check for an HTTP error status (e.g., 404, 500)
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        // Get the response body as plain text
-        return response.text();
-    })
-    .then(scriptText => {
-        console.log('--- Script content fetched: ---');
-        console.log(scriptText.substring(0, 500) + '...'); // Log first 500 characters
-        console.log('--- Executing script... ---');
-        
-        // **Execute the fetched JavaScript content**
-        // 🚨 DANGER: Only execute trusted code!
-        eval(scriptText); 
-        
-        console.log('--- Script execution complete. ---');
-    })
-    .catch(error => {
-        console.error('Error fetching or executing script:', error);
-    });
-```
+# Then copy the content of the script you want to use and paste in discord app console (if cannot paste, type `allow pasting`, then paste again)
