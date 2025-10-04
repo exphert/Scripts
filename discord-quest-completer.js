@@ -30,7 +30,7 @@ if(!quest) {
 > applicationName: ${applicationName}
 > questName: ${questName}
 > taskName: ${taskName}
-> taskConfig: ${taskConfig}
+> taskConfig: ${JSON.stringify(taskConfig)}
 =======================`);
 
 	if(taskName === "WATCH_VIDEO" || taskName === "WATCH_VIDEO_ON_MOBILE") {
