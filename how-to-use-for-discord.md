@@ -10,7 +10,7 @@
 4. Save the file and restart Discord. The DevTools shortcut (Ctrl+Shift+I or Cmd+Option+I) should now work.
 ```
 
-### Then copy the content of the script you want to use and paste in discord app console (if cannot paste, type `allow pasting`, then paste again)
+### Then copy the content of the script you want to use and paste in discord app console (if cannot paste, type `allow pasting`, enter, then paste again)
 
 ## IMPORTANT!!
 Follow the printed instructions depending on what type of quest you have
