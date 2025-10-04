@@ -1,3 +1,6 @@
+> [!NOTE]
+> This does not works in browser for quests which require you to play a game! Use the [desktop app](https://discord.com/download) to complete those.
+
 ### Open devtools in you discord app, with CTRL + SHIFT + i (if not work, follow this step below)
 ```
 1. Navigate to the Discord settings folder:
@@ -12,7 +15,7 @@
 
 ### Then copy the content of the script you want to use and paste in discord app console (if cannot paste, type `allow pasting`, enter, then paste again)
 
-## IMPORTANT!!
-Follow the printed instructions depending on what type of quest you have
-- If your quest says to "play" the game or watch a video, you can just wait and do nothing
-- If your quest says to "stream" the game, join a vc with a friend or alt and stream any window
+> [!IMPORTANT!!]
+> Follow the printed instructions depending on what type of quest you have
+> - If your quest says to "play" the game or watch a video, you can just wait and do nothing
+> - If your quest says to "stream" the game, join a vc with a friend or alt and stream any window
