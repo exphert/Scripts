@@ -24,6 +24,14 @@ if(!quest) {
 	const taskName = ["WATCH_VIDEO", "PLAY_ON_DESKTOP", "STREAM_ON_DESKTOP", "PLAY_ACTIVITY", "WATCH_VIDEO_ON_MOBILE"].find(x => taskConfig.tasks[x] != null)
 	const secondsNeeded = taskConfig.tasks[taskName].target
 	let secondsDone = quest.userStatus?.progress?.[taskName]?.value ?? 0
+	console.log(`=======================
+[+] Script Started for Task: ${questName}
+> applicationId: ${applicationId}
+> applicationName: ${applicationName}
+> questName: ${questName}
+> taskName: ${taskName}
+> taskConfig: ${taskConfig}
+=======================`);
 
 	if(taskName === "WATCH_VIDEO" || taskName === "WATCH_VIDEO_ON_MOBILE") {
 		const maxFuture = 10, speed = 7, interval = 1
